@@ -27,3 +27,7 @@ verifying optimal play always ends in a draw and the AI never loses to random pl
 pip install -r requirements.txt
 pytest
 ```
+
+## Tests and CI
+CI (`.github/workflows/ci.yml`) byte-compiles the sources and runs the
+test suite on every push and pull request to `main` (Python 3.11).
