@@ -31,3 +31,13 @@ pytest
 ## Tests and CI
 CI (`.github/workflows/ci.yml`) byte-compiles the sources and runs the
 test suite on every push and pull request to `main` (Python 3.11).
+
+## Make shortcuts
+The `Makefile` wraps the common commands (`PY` and `VENV` are overridable):
+```bash
+make setup   # create .venv and install dependencies
+make test    # run the pytest suite (19 tests)
+make run     # start the Flask web app at http://127.0.0.1:5000
+make play    # play the standalone terminal game against the AI
+make clean   # remove .venv and caches
+```
